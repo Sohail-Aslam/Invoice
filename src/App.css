@@ -5,8 +5,8 @@
   text-align: center;
 }
 
-.input-sub-container{
-  display:flex;
+.input-sub-container {
+  display: flex;
   flex-direction: row;
   gap: 30px;
   flex-wrap: wrap;
@@ -17,23 +17,23 @@ input {
   padding: 10px;
   font-size: 14px;
   color: #333;
-  background-color: #E6F2FA;
+  background-color: #e6f2fa;
   border: none;
-  border-bottom: 1px solid #1884FF;
-  border-left: 1px solid #1884FF;
+  border-bottom: 1px solid #1884ff;
+  border-left: 1px solid #1884ff;
   box-shadow: none;
   transition: all 0.3s ease;
 }
 
 input:focus {
-  border-color: #1884FF; /* Highlighted border */
+  border-color: #1884ff; /* Highlighted border */
   box-shadow: 0 0 7px rgba(24, 132, 255, 0.5); /* Subtle glow effect */
   outline: none;
 }
 
 /* Placeholder Styling */
 input::placeholder {
-  color: #B2AFAF;
+  color: #b2afaf;
   font-style: italic;
   font-weight: 500;
 }
@@ -56,7 +56,6 @@ input:disabled {
   display: flex;
   align-items: center;
   position: relative;
-
 }
 
 .input-container input {
@@ -80,54 +79,53 @@ input:disabled {
   font-size: 12px;
   margin-top: 5px;
 }
-.service-input-container{
- display:flex;
+.service-input-container {
+  display: flex;
   flex-direction: column;
   gap: 15px;
-
 }
 
-.service-container{
-margin: 0 30px;
+.service-container {
+  margin: 0 30px;
 }
 
-.sub-heading{
-  color: #0F4666;
+.sub-heading {
+  color: #0f4666;
 }
 
-.heading{
+.heading {
   text-align: left;
   margin: 0%;
 }
-h1{
-  color: #0F4666;
+h1 {
+  color: #0f4666;
   text-decoration: underline;
 }
 
-.buttons{
+.buttons {
   display: flex;
   gap: 40px;
   justify-content: center;
 }
 
-button{
+button {
   min-width: 98px;
   min-height: 40;
 }
 
-.login-container{
+.login-container {
   display: flex;
   align-items: center;
-  border: #0F4666 2px solid;
-  background: #0F4666;
+  border: #0f4666 2px solid;
+  background: #0f4666;
   align-items: center;
   justify-content: center;
   width: 90%;
 }
-.login-img{
+.login-img {
   background: #fff;
 }
-.login-form{
+.login-form {
   height: 100%;
   width: 100%;
 }
@@ -146,19 +144,19 @@ button{
     font-size: 28px;
     margin: 0;
   }
-  h2{
+  h2 {
     margin: 0;
     font-size: 22px;
   }
 
-  #root{
+  #root {
     padding: 1rem;
   }
 
   .input-container {
-  padding-left: 10px;
-  width: 100%; /* Adjust for icon space */
-}
+    padding-left: 10px;
+    width: 100%; /* Adjust for icon space */
+  }
   input {
     font-size: 12px; /* Adjust input font size */
     padding: 8px;
@@ -169,20 +167,52 @@ button{
     padding: 10px; /* Reduce button padding */
     font-size: 14px; /* Adjust button font size */
   }
-  .service-container{
-margin: 0 10px;
+  .service-container {
+    margin: 0 10px;
+  }
+  .input-sub-container {
+    gap: 10px;
+  }
 }
-.input-sub-container{
-  gap: 10px;
+.login-form input {
+  background: #0f4666 !important;
+  color: #fff;
 }
+.login-input {
+  background: #0f4666 !important;
+  width: 85%;
+  margin-bottom: 10px;
 }
-    .login-form input {
-      background: #0F4666 !important;
-      color: #fff;
 
-    }
-    .login-input{
-      background: #0F4666 !important;
-      width: 85%;
-      margin-bottom: 10px;
-    }
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px); /* Blur the background */
+  z-index: 1000;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.invoice-preview {
+  background: white;
+  overflow-y: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  width: 210mm;
+  min-height: 297mm;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.modal-overlay .buttons {
+  margin-top: 20px;
+}
